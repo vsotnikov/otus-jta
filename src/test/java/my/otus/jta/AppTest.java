@@ -1,20 +1,21 @@
 package my.otus.jta;
 
-import static org.junit.Assert.assertTrue;
-
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.junit.Test;
 
-/**
- * Unit test for simple App.
- */
+import static org.junit.Assert.assertFalse;
+
+
 public class AppTest 
 {
-    /**
-     * Rigorous Test :-)
-     */
+    private static final Logger logger = LogManager.getLogger(AppTest.class);
+
     @Test
-    public void shouldAnswerWithTrue()
+    public void openOtusSiteAndCheckTitle()
     {
-        assertTrue( true );
+        logger.info("Start openOtusSiteAndCheckTitle test");
+
+        assertFalse(false);
     }
 }
